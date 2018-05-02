@@ -1,17 +1,5 @@
-class AnswerCheck
-  attr_accessor      :answer
-
-  def initialize
-    @answer = generate
-  end
-
-  def generate
-    possible = ["r", "g", "b", "y"]
-    possible.map do
-      possible.sample
-    end
-  end
-
+module AnswerCheck
+  
   def check_answer(input)
     correct_elements = 0
     correct_indicies = 0
