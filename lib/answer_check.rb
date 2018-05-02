@@ -3,7 +3,6 @@ class AnswerCheck
 
   def initialize
     @answer = generate
-    @guess_number = 0
   end
 
   def generate
@@ -14,7 +13,6 @@ class AnswerCheck
   end
 
   def check_answer(input)
-    @guess_number += 1
     correct_elements = 0
     correct_indicies = 0
     @answer.each_with_index do |letter, index|
