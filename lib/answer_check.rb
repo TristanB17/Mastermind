@@ -1,9 +1,9 @@
 module AnswerCheck
-  
-  def check_answer(input)
+
+  def check_answer(answer, input)
     correct_elements = 0
     correct_indicies = 0
-    @answer.each_with_index do |letter, index|
+    answer.each_with_index do |letter, index|
       if input.include?(letter)
         correct_elements += 1
       end
