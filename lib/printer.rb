@@ -29,6 +29,11 @@ module Printer
   def invalid_input_txt
     puts "\e[H\e[2J"
     puts "Invalid guess. Answers must be four letters long."
-  end 
+  end
+
+  def hint_txt
+    puts "\e[H\e[2J"
+    
+  end
 
 end
