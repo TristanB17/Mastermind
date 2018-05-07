@@ -9,11 +9,11 @@ module Printer
 
   def instructions_txt
     puts "\e[H\e[2J"
-    puts "I will generate a sequence with four" \
+    puts "I will generate a sequence with four " \
     "elements made up of: (r)ed, (g)reen, (b)lue, and (y)ellow."
     puts "Your task is that you must guess(type) the correct combination of colors"
-    puts "(a color may also appear more than once -
-    it's even possible that a sequence contains the same color up to four times!)."
+    puts "(a color may also appear more than once - it's even possible that a sequence contains the same color up to four times!)."
+    puts "Press (p) to play, (q) to quit or (c) to cheat."
   end
 
   def play_txt
@@ -30,18 +30,18 @@ module Printer
 
   def invalid_input_txt
     puts "\e[H\e[2J"
-    puts "Invalid guess. Answers must be four letters long."
+    puts "Invalid guess. Answers must be four letters in length."
   end
 
   def cheat_txt
     puts "\e[H\e[2J"
-    puts "Grand-scale cheating: the answer is #{@answer.join}"
+    puts "Eat pumpkins much? The answer is #{@answer.join}"
   end
 
   def wrong_txt
-    puts "Nope, but you have #{@number1}
-    correct colors, #{@number2} correct indicies."
+    puts "Nope, but your guess (#{@input.join}) had #{@number1} correct colors, and #{@number2} correct indicies."
     puts "and you've taken #{@guess_number} guess#{"es" if @guess_number > 1}."
+    puts "Have another guess!"
   end
 
   def win_txt
