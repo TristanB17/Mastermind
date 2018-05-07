@@ -39,7 +39,7 @@ module Printer
   end
 
   def wrong_txt
-    puts "Nope, but your guess (#{@input.join}) had #{@number1} correct colors, and #{@number2} correct indicies."
+    puts "Nope, but your guess (#{@input.join}) had #{@elements} correct colors, in #{@indicies} correct positions."
     puts "and you've taken #{@guess_number} guess#{"es" if @guess_number > 1}."
     puts "Have another guess!"
   end
